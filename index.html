@@ -3,27 +3,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vantage - Gym & Nutrition</title>
+    <title>Vantage - Train Smarter. Eat Better.</title>
+    <meta name="description" content="Vantage is a local-first gym and nutrition tracking app with voice dictation, structured programs, and AI habit coaching.">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <a href="index.html"><h1>Vantage</h1></a>
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <img src="assets/vantage-mark-transparent.png" width="28" height="28" alt="Vantage Logo" style="object-fit: contain;">
+                Vantage
+            </a>
+            <button class="menu-toggle">☰</button>
+            <nav class="nav-links">
+                <a href="features.html">Features</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+                <a href="#" class="btn btn-primary">Download on the App Store</a>
+            </nav>
+        </div>
     </header>
 
     <main>
-        <section class="hero">
-            <h2>Your Ultimate Gym & Nutrition Companion</h2>
-            <p>Track your workouts, log your meals, and achieve your fitness goals with Vantage. Currently in private beta.</p>
+        <section class="hero container">
+            <h1>Train Smarter. <br>Eat Better.</h1>
+            <p>Your local-first companion for structured lifting, voice-logged nutrition, and actionable analytics. Currently in private beta.</p>
+            <div class="hero-actions">
+                <a href="#" class="btn btn-primary">Download on the App Store</a>
+                <a href="features.html" class="btn btn-secondary">Explore Features</a>
+            </div>
+
+            <div class="device-mockup">
+                <div class="device-notch"></div>
+                <div class="device-screen">
+                    <!-- Replace with your actual screenshot: <img src="assets/home-screen.png" alt="Vantage App Screen"> -->
+                    <div class="device-screen-placeholder">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin: 0 auto 1rem;">
+                            <path d="M12 2L2 22H22L12 2Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                        </svg>
+                        <p>App Screenshot Placeholder</p>
+                        <p class="text-muted" style="font-size: 0.8rem;">(Drop your image in assets/)</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section container">
+            <div class="text-center" style="margin-bottom: var(--space-xl);">
+                <h2>Everything you need, nothing you don't.</h2>
+                <p style="max-width: 600px; margin: 0 auto;">Built for those who take their training seriously. Fast logging, deep analytics, and total privacy.</p>
+            </div>
+
+            <div class="grid grid-3">
+                <div class="card">
+                    <span class="card-icon">🏋️‍♂️</span>
+                    <h3>Structured Training</h3>
+                    <p>Build custom multi-week programs, track 1RM progression, and leverage our 890+ exercise library with a built-in plate calculator and rest timer.</p>
+                </div>
+                <div class="card">
+                    <span class="card-icon">🎙️</span>
+                    <h3>Voice Nutrition</h3>
+                    <p>Stop searching. Just say "I had three eggs and a bowl of oatmeal" and let our AI parser instantly log the exact macros using the USDA database.</p>
+                </div>
+                <div class="card">
+                    <span class="card-icon">🔒</span>
+                    <h3>Local-First Privacy</h3>
+                    <p>Your data lives on your device first. Fast, offline-capable, and fully yours to export. Cloud sync is there when you want it, not because we demand it.</p>
+                </div>
+            </div>
         </section>
     </main>
 
     <footer>
-        <nav>
-            <a href="privacy.html">Privacy Policy</a>
-            <a href="terms.html">Terms of Service</a>
-        </nav>
-        <p>&copy; 2026 Vantage. All rights reserved.</p>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <img src="assets/vantage-mark-transparent.png" width="20" height="20" alt="Vantage Logo" style="object-fit: contain;">
+                        Vantage
+                    </a>
+                    <p>The gym and nutrition app built for focus, speed, and data ownership.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Product</h4>
+                    <ul>
+                        <li><a href="features.html">Features</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="#">Download on the App Store</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Support & Legal</h4>
+                    <ul>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Vantage. All rights reserved.</p>
+                <p>Designed for iOS & Android.</p>
+            </div>
+        </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
