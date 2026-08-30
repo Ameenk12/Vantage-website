@@ -1,0 +1,132 @@
+:root {
+  --primary: #000000;
+  --bg-color: #f9f9f9;
+  --text-color: #333333;
+  --text-muted: #666666;
+  --surface: #ffffff;
+  --border: #e5e5e5;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --primary: #ffffff;
+    --bg-color: #121212;
+    --text-color: #f1f1f1;
+    --text-muted: #a0a0a0;
+    --surface: #1e1e1e;
+    --border: #333333;
+  }
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  padding: 2rem;
+  background-color: var(--surface);
+  border-bottom: 1px solid var(--border);
+  text-align: center;
+}
+
+header a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+header h1 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+main {
+  flex: 1;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+  width: 100%;
+}
+
+.hero {
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: var(--text-muted);
+  margin-bottom: 2rem;
+}
+
+.document {
+  background-color: var(--surface);
+  padding: 2rem;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+}
+
+.document h2 {
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.document h3 {
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.document p, .document ul {
+  margin-bottom: 1rem;
+  color: var(--text-muted);
+}
+
+.document ul {
+  padding-left: 1.5rem;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem;
+  background-color: var(--surface);
+  border-top: 1px solid var(--border);
+  margin-top: auto;
+}
+
+footer nav {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+footer a {
+  color: var(--text-muted);
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+  color: var(--text-color);
+}
+
+footer p {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
