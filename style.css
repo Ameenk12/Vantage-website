@@ -1,4 +1,6 @@
 /* Vantage Design System - Mountain Theme */
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700;800&display=swap');
+
 :root {
   /* Colors - Light Theme (Alpine Day) */
   --bg-primary: #ffffff;
@@ -17,7 +19,7 @@
   --glass-border: rgba(15, 23, 42, 0.05);
 
   /* Typography */
-  --font-sans: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --font-sans: "Space Grotesk", -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   
   /* Spacing */
   --space-xs: 0.5rem;
