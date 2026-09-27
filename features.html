@@ -1,140 +1,106 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Features - Vantage</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f8fa" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0b111c" media="(prefers-color-scheme: dark)">
+  <title>Features — Vantage</title>
+  <meta name="description" content="Explore Vantage workout logging, nutrition diary, progress analytics, coaching, themes, and Apple Watch companion.">
+  <link rel="icon" href="assets/vantage-mark-transparent.png">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <div class="container nav-container">
-            <a href="index.html" class="logo">
-                <img src="assets/vantage-mark-transparent.png" width="28" height="28" alt="Vantage Logo" style="object-fit: contain;">
-                Vantage
-            </a>
-            <button class="menu-toggle">☰</button>
-            <nav class="nav-links">
-                <a href="features.html" style="font-weight: 700;">Features</a>
-                <a href="about.html">About</a>
-                <a href="contact.html">Contact</a>
-                <a href="#" class="btn btn-primary">Download on the App Store</a>
-            </nav>
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="index.html" class="logo" aria-label="Vantage home"><img src="assets/vantage-mark-transparent.png" width="30" height="30" alt=""><span>Vantage</span></a>
+      <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="site-navigation"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+      <nav class="nav-links" id="site-navigation" aria-label="Primary navigation">
+        <a href="features.html" aria-current="page">Features</a><a href="about.html">About</a><a href="contact.html">Support</a>
+        <a href="mailto:support@vantage.support?subject=Vantage%20private%20beta" class="btn btn-primary">Join the private beta</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero container">
+      <p class="eyebrow">One app, one record</p>
+      <h1>The details when you need them. The next action when you don’t.</h1>
+      <p>Vantage connects daily logging with the longer view, without requiring a social profile or a network connection for the basics.</p>
+      <nav class="anchor-nav" aria-label="Feature sections"><a href="#nutrition">Nutrition</a><a href="#training">Training</a><a href="#progress">Progress</a><a href="#everywhere">Everywhere</a></nav>
+    </section>
+
+    <section class="product-section container" id="nutrition">
+      <div class="product-copy">
+        <p class="eyebrow nutrition-text">Nutrition</p>
+        <h2>Log the meal the way it happened.</h2>
+        <p>Describe a meal by voice or text, scan a packaged food, repeat a saved meal, or create a recipe from a photo, link, paste, or chat.</p>
+        <ul class="feature-list">
+          <li><strong>Natural meal logging</strong><span>Speak or type in your own words, review the estimate, then decide what to save.</span></li>
+          <li><strong>A real daily diary</strong><span>Calories, protein, carbs, fat, meal groups, and seven-day context stay readable.</span></li>
+          <li><strong>Flexible targets</strong><span>Use fixed goals or adaptive calorie guidance based on the body data you choose to track.</span></li>
+        </ul>
+      </div>
+      <figure class="product-shot nutrition-shot"><img src="assets/app/nutrition.webp" width="660" height="1434" loading="lazy" alt="Vantage Nutrition Diary with meal actions, daily macro targets, and a seven-day calorie trend"></figure>
+    </section>
+
+    <section class="product-section product-section-reverse container" id="training">
+      <div class="product-copy">
+        <p class="eyebrow training-text">Training</p>
+        <h2>Everything the set needs. Nothing it doesn’t.</h2>
+        <p>Start from a program, template, or quick workout. Previous performance, set targets, notes, plate math, rest timing, and exercise detail remain close.</p>
+        <ul class="feature-list">
+          <li><strong>890-exercise library</strong><span>Search across equipment, movement patterns, and muscle groups with instructions and body maps.</span></li>
+          <li><strong>Every kind of set</strong><span>Track weight and reps, duration, or distance with the correct units.</span></li>
+          <li><strong>Local-first sessions</strong><span>The active workout remains usable in a gym with unreliable reception.</span></li>
+        </ul>
+      </div>
+      <figure class="product-shot training-shot"><img src="assets/app/workout.webp" width="660" height="1434" loading="lazy" alt="Vantage live workout logger showing previous performance and current sets"></figure>
+    </section>
+
+    <section class="product-section container" id="progress">
+      <div class="product-copy">
+        <p class="eyebrow progress-text">Progress</p>
+        <h2>Useful patterns, not vanity metrics.</h2>
+        <p>Compare time ranges across workouts, volume, time trained, calorie intake, body weight, and individual exercise performance.</p>
+        <ul class="feature-list">
+          <li><strong>At-a-glance summaries</strong><span>Period-over-period context explains what changed instead of leaving you with a chart alone.</span></li>
+          <li><strong>Strength detail</strong><span>Follow estimated strength, personal records, history, and muscle-group balance.</span></li>
+          <li><strong>Sherpa coaching</strong><span>Ask for practical help grounded in the Vantage data you choose to share with the conversation.</span></li>
+        </ul>
+      </div>
+      <figure class="product-shot progress-shot"><img src="assets/app/progress.webp" width="660" height="1434" loading="lazy" alt="Vantage Progress screen comparing training, nutrition, and body metrics"></figure>
+    </section>
+
+    <section class="section platform-section" id="everywhere">
+      <div class="container">
+        <div class="section-heading center-heading">
+          <p class="eyebrow">Made for Apple devices</p>
+          <h2>From the quick glance to the wide view.</h2>
+          <p>Vantage adapts the same data and actions to iPhone, iPad, and Apple Watch.</p>
         </div>
-    </header>
-
-    <main style="padding-top: 100px;">
-        <section class="section container">
-            <div class="text-center" style="margin-bottom: var(--space-xl);">
-                <h1>Powerful features, zero friction.</h1>
-                <p style="max-width: 600px; margin: 0 auto;">We stripped out the social feeds and ads to focus entirely on giving you the best tools to track your progress.</p>
-            </div>
-
-            <div class="feature-split">
-                <div class="feature-content">
-                    <h2>Advanced Workout Logging</h2>
-                    <p>Vantage doesn't just record numbers; it understands your training. Build custom multi-week programs, use our plate calculator mid-set, and let the automatic rest timer keep you on pace.</p>
-                    <ul style="list-style-type: disc; padding-left: 1.5rem; color: var(--text-secondary); margin-bottom: 1.5rem;">
-                        <li style="margin-bottom: 0.5rem;">Library of 890+ exercises with anatomical body maps</li>
-                        <li style="margin-bottom: 0.5rem;">1RM estimation and historical PR tracking</li>
-                        <li style="margin-bottom: 0.5rem;">Swipe-to-copy previous session weights</li>
-                        <li style="margin-bottom: 0.5rem;">AI-generated workout templates</li>
-                    </ul>
-                </div>
-                <div class="feature-visual">
-                    <div class="device-mockup" style="transform: scale(0.9);">
-                        <div class="device-notch"></div>
-                        <div class="device-screen">
-                            <div class="device-screen-placeholder">
-                                <p>Workout Logger<br>Screenshot</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="feature-split">
-                <div class="feature-content">
-                    <h2>Frictionless Nutrition</h2>
-                    <p>Typing out every ingredient is tedious. With Vantage, you can just tap the microphone and speak your meal naturally. Our AI extracts the foods, matches them against the USDA database, and logs the macros instantly.</p>
-                    <ul style="list-style-type: disc; padding-left: 1.5rem; color: var(--text-secondary); margin-bottom: 1.5rem;">
-                        <li style="margin-bottom: 0.5rem;">Voice dictation powered by OpenAI Whisper</li>
-                        <li style="margin-bottom: 0.5rem;">Barcode scanner for packaged foods</li>
-                        <li style="margin-bottom: 0.5rem;">Recipe importer via iOS Share Sheet</li>
-                        <li style="margin-bottom: 0.5rem;">Adaptive calorie targets that adjust to your true burn</li>
-                    </ul>
-                </div>
-                <div class="feature-visual">
-                    <div class="device-mockup" style="transform: scale(0.9);">
-                        <div class="device-notch"></div>
-                        <div class="device-screen">
-                            <div class="device-screen-placeholder">
-                                <p>Voice Nutrition<br>Screenshot</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="feature-split">
-                <div class="feature-content">
-                    <h2>Actionable Analytics & Coaching</h2>
-                    <p>Your data should tell a story. Our cross-domain analytics tab links your training volume to your nutritional adherence and body weight trends. Need an extra push? Chat with our built-in CBT-style habit coach.</p>
-                    <ul style="list-style-type: disc; padding-left: 1.5rem; color: var(--text-secondary); margin-bottom: 1.5rem;">
-                        <li style="margin-bottom: 0.5rem;">Period-over-period training volume charts</li>
-                        <li style="margin-bottom: 0.5rem;">Muscle-group training-balance breakdowns</li>
-                        <li style="margin-bottom: 0.5rem;">Activity streaks and consistency tracking</li>
-                        <li style="margin-bottom: 0.5rem;">Habit coach grounded in your real logged data</li>
-                    </ul>
-                </div>
-                <div class="feature-visual">
-                    <div class="device-mockup" style="transform: scale(0.9);">
-                        <div class="device-notch"></div>
-                        <div class="device-screen">
-                            <div class="device-screen-placeholder">
-                                <p>Analytics Tab<br>Screenshot</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-brand">
-                    <a href="index.html" class="logo">
-                        <img src="assets/vantage-mark-transparent.png" width="20" height="20" alt="Vantage Logo" style="object-fit: contain;">
-                        Vantage
-                    </a>
-                    <p>The gym and nutrition app built for focus, speed, and data ownership.</p>
-                </div>
-                <div class="footer-links">
-                    <h4>Product</h4>
-                    <ul>
-                        <li><a href="features.html">Features</a></li>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="#">Download on the App Store</a></li>
-                    </ul>
-                </div>
-                <div class="footer-links">
-                    <h4>Support & Legal</h4>
-                    <ul>
-                        <li><a href="contact.html">Contact</a></li>
-                        <li><a href="privacy.html">Privacy Policy</a></li>
-                        <li><a href="terms.html">Terms of Service</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 Vantage. All rights reserved.</p>
-                <p>Designed for iOS & Android.</p>
-            </div>
+        <div class="platform-grid">
+          <article><span class="platform-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M10 18h4"/></svg></span><h3>iPhone</h3><p>The complete daily companion, with focused phone layouts and native navigation.</p></article>
+          <article><span class="platform-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="2" width="18" height="20" rx="2"/><path d="M11 18h2"/></svg></span><h3>iPad</h3><p>Two-pane dashboards, wider charts, adaptive grids, and a live-workout sidebar.</p></article>
+          <article><span class="platform-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M9 3h6l1 3h2a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2h-2l-1 3H9l-1-3H6a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h2l1-3Z"/></svg></span><h3>Apple Watch</h3><p>Start and log workouts, follow rest, see the diary, use saved meals, and dictate a meal.</p></article>
         </div>
-    </footer>
+      </div>
+    </section>
 
-    <script src="script.js"></script>
+    <section class="section container theme-section">
+      <div class="section-heading"><p class="eyebrow">Looks like yours</p><h2>Five personalities. Light and dark included.</h2><p>The app’s theme changes color, type, shape, icon treatment, and backdrop—not just the accent.</p></div>
+      <div class="theme-gallery" aria-label="Vantage theme examples">
+        <figure><img src="assets/app/lucid-dark.webp" loading="lazy" width="660" height="1434" alt="Vantage Lucid theme in dark appearance"><figcaption>Lucid</figcaption></figure>
+        <figure><img src="assets/app/space-dark.webp" loading="lazy" width="660" height="1434" alt="Vantage Space theme in dark appearance"><figcaption>Space</figcaption></figure>
+        <figure><img src="assets/app/cyberpunk-dark.webp" loading="lazy" width="660" height="1434" alt="Vantage Cyberpunk theme in dark appearance"><figcaption>Cyberpunk</figcaption></figure>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-grid"><div class="footer-brand"><a href="index.html" class="logo"><img src="assets/vantage-mark-transparent.png" width="26" height="26" alt=""><span>Vantage</span></a><p>Training and nutrition in one clear, local-first view.</p></div><div class="footer-links"><h2>Product</h2><ul><li><a href="features.html">Features</a></li><li><a href="about.html">About</a></li><li><a href="mailto:support@vantage.support?subject=Vantage%20private%20beta">Private beta</a></li></ul></div><div class="footer-links"><h2>Support &amp; legal</h2><ul><li><a href="contact.html">Support</a></li><li><a href="privacy.html">Privacy Policy</a></li><li><a href="consumer-health-data.html">Consumer Health Data Notice</a></li><li><a href="terms.html">Terms of Service</a></li></ul></div></div>
+    <div class="container footer-bottom"><p>&copy; 2026 Vantage. All rights reserved.</p><p>Built for iPhone, iPad, and Apple Watch.</p></div>
+  </footer>
+  <script src="script.js"></script>
 </body>
 </html>

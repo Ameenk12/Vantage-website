@@ -1,78 +1,43 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - Vantage</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Support — Vantage</title>
+  <meta name="description" content="Contact Vantage support or request access to the private beta.">
+  <link rel="icon" href="assets/vantage-mark-transparent.png">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <div class="container nav-container">
-            <a href="index.html" class="logo">
-                <img src="assets/vantage-mark-transparent.png" width="28" height="28" alt="Vantage Logo" style="object-fit: contain;">
-                Vantage
-            </a>
-            <button class="menu-toggle">☰</button>
-            <nav class="nav-links">
-                <a href="features.html">Features</a>
-                <a href="about.html">About</a>
-                <a href="contact.html" style="font-weight: 700;">Contact</a>
-                <a href="#" class="btn btn-primary">Download on the App Store</a>
-            </nav>
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="index.html" class="logo" aria-label="Vantage home"><img src="assets/vantage-mark-transparent.png" width="30" height="30" alt=""><span>Vantage</span></a>
+      <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="site-navigation"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+      <nav class="nav-links" id="site-navigation" aria-label="Primary navigation"><a href="features.html">Features</a><a href="about.html">About</a><a href="contact.html" aria-current="page">Support</a><a href="mailto:support@vantage.support?subject=Vantage%20private%20beta" class="btn btn-primary">Join the private beta</a></nav>
+    </div>
+  </header>
+  <main>
+    <section class="page-hero container">
+      <p class="eyebrow">Support &amp; access</p>
+      <h1>Talk to the person building Vantage.</h1>
+      <p>Send a support question, report something that feels off, or ask to join the private beta.</p>
+    </section>
+    <section class="section container">
+      <div class="card text-center" style="max-width: 720px; margin: 0 auto;">
+        <div class="icon-tile" style="margin: 0 auto var(--space-4); color: var(--shell); background: var(--surface-soft);" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 5h16v12H8l-4 4V5Z"/><path d="M8 9h8M8 13h5"/></svg></div>
+        <h2 style="font-size: clamp(2rem, 5vw, 3.25rem); margin-bottom: var(--space-3);">How can we help?</h2>
+        <p style="max-width: 530px; margin-inline: auto;">Include the device you’re using and what you expected to happen. Screenshots are welcome, but please leave out anything you do not want to share.</p>
+        <div class="hero-actions" style="justify-content: center;">
+          <a href="mailto:support@vantage.support?subject=Vantage%20support" class="btn btn-primary">Email support</a>
+          <a href="mailto:support@vantage.support?subject=Vantage%20private%20beta" class="btn btn-secondary">Request beta access</a>
         </div>
-    </header>
-
-    <main style="padding-top: 100px;">
-        <section class="section container">
-            <div class="text-center" style="margin-bottom: var(--space-xl);">
-                <h1>Get in Touch</h1>
-                <p style="max-width: 600px; margin: 0 auto;">Have a question, feature request, or need help with the app? We're here to help.</p>
-            </div>
-
-            <div class="card text-center" style="max-width: 600px; margin: 0 auto; padding: var(--space-xl) var(--space-md);">
-                <div style="font-size: 3rem; margin-bottom: var(--space-sm);">🏔️</div>
-                <h3 style="margin-bottom: var(--space-sm);">Direct Support</h3>
-                <p style="margin-bottom: var(--space-md);">We aim to respond to all inquiries within 24 hours.</p>
-                <a href="mailto:support@vantage.support" class="btn btn-primary" style="font-size: 1.25rem; padding: 1rem 2rem;">support@vantage.support</a>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-brand">
-                    <a href="index.html" class="logo">
-                        <img src="assets/vantage-mark-transparent.png" width="20" height="20" alt="Vantage Logo" style="object-fit: contain;">
-                        Vantage
-                    </a>
-                    <p>The gym and nutrition app built for focus, speed, and data ownership.</p>
-                </div>
-                <div class="footer-links">
-                    <h4>Product</h4>
-                    <ul>
-                        <li><a href="features.html">Features</a></li>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="#">Download on the App Store</a></li>
-                    </ul>
-                </div>
-                <div class="footer-links">
-                    <h4>Support & Legal</h4>
-                    <ul>
-                        <li><a href="contact.html">Contact</a></li>
-                        <li><a href="privacy.html">Privacy Policy</a></li>
-                        <li><a href="terms.html">Terms of Service</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 Vantage. All rights reserved.</p>
-                <p>Designed for iOS & Android.</p>
-            </div>
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="container footer-grid"><div class="footer-brand"><a href="index.html" class="logo"><img src="assets/vantage-mark-transparent.png" width="26" height="26" alt=""><span>Vantage</span></a><p>Training and nutrition in one clear, local-first view.</p></div><div class="footer-links"><h2>Product</h2><ul><li><a href="features.html">Features</a></li><li><a href="about.html">About</a></li><li><a href="mailto:support@vantage.support?subject=Vantage%20private%20beta">Private beta</a></li></ul></div><div class="footer-links"><h2>Support &amp; legal</h2><ul><li><a href="contact.html">Support</a></li><li><a href="privacy.html">Privacy Policy</a></li><li><a href="consumer-health-data.html">Consumer Health Data Notice</a></li><li><a href="terms.html">Terms of Service</a></li></ul></div></div>
+    <div class="container footer-bottom"><p>&copy; 2026 Vantage. All rights reserved.</p><p>Built for iPhone, iPad, and Apple Watch.</p></div>
+  </footer>
+  <script src="script.js"></script>
 </body>
 </html>

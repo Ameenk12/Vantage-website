@@ -1,87 +1,50 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us - Vantage</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About — Vantage</title>
+  <meta name="description" content="Why Vantage brings training, nutrition, and progress into one local-first app.">
+  <link rel="icon" href="assets/vantage-mark-transparent.png">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <div class="container nav-container">
-            <a href="index.html" class="logo">
-                <img src="assets/vantage-mark-transparent.png" width="28" height="28" alt="Vantage Logo" style="object-fit: contain;">
-                Vantage
-            </a>
-            <button class="menu-toggle">☰</button>
-            <nav class="nav-links">
-                <a href="features.html">Features</a>
-                <a href="about.html" style="font-weight: 700;">About</a>
-                <a href="contact.html">Contact</a>
-                <a href="#" class="btn btn-primary">Download on the App Store</a>
-            </nav>
-        </div>
-    </header>
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="index.html" class="logo" aria-label="Vantage home"><img src="assets/vantage-mark-transparent.png" width="30" height="30" alt=""><span>Vantage</span></a>
+      <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="site-navigation"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+      <nav class="nav-links" id="site-navigation" aria-label="Primary navigation"><a href="features.html">Features</a><a href="about.html" aria-current="page">About</a><a href="contact.html">Support</a><a href="mailto:support@vantage.support?subject=Vantage%20private%20beta" class="btn btn-primary">Join the private beta</a></nav>
+    </div>
+  </header>
+  <main>
+    <section class="page-hero container">
+      <p class="eyebrow">Why Vantage</p>
+      <h1>Your tools should help you act—not ask for more attention.</h1>
+      <p>Vantage is being built around a simple idea: the useful parts of training and nutrition belong together, close to the person doing the work.</p>
+    </section>
+    <section class="section container">
+      <div class="document-content">
+        <h2>Local first, by design</h2>
+        <p>A workout or meal should not depend on a perfect connection. Core records are written on your device first, and an account is optional. Sign in when you want cloud backup, sync, or provider-backed features.</p>
 
-    <main style="padding-top: 100px;">
-        <section class="section container">
-            <div class="text-center" style="margin-bottom: var(--space-xl);">
-                <h1>Our Mission</h1>
-                <p style="max-width: 600px; margin: 0 auto;">We believe your health data belongs to you, and your tools should get out of your way.</p>
-            </div>
+        <h2>Your data stays useful to you</h2>
+        <p>Vantage does not need a social feed or advertising profile to work. You can review and edit your entries, export supported data, clear local records, or delete an account from the app.</p>
 
-            <div class="document-content">
-                <h3 style="margin-bottom: var(--space-sm);">The Problem</h3>
-                <p>Most fitness apps today are bloated with social feeds, invasive ads, and dark patterns designed to keep you scrolling. Even worse, they hold your data hostage in the cloud, rendering the app useless the moment you step into a gym with poor cell reception.</p>
+        <h2>AI earns its place</h2>
+        <p>Provider-backed tools are used for jobs where they reduce real friction: transcribing speech, turning a natural meal description into a reviewable estimate, importing recipes, generating plans, and helping Sherpa respond to the context you choose to provide. Those features require an account and are separate from local workout and meal logging.</p>
 
-                <h3 style="margin-top: var(--space-lg); margin-bottom: var(--space-sm);">The Vantage Philosophy</h3>
+        <h2>One system, two modes</h2>
+        <p>Nutrition is calm and spacious. Training is focused and numeric. They share one design language, one progress story, and the same commitment to clear controls, accessible states, and purposeful motion.</p>
 
-                <h4 style="margin-top: var(--space-md); margin-bottom: var(--space-xs);">1. Local-First</h4>
-                <p>Vantage is built on a local-first architecture. Your data is saved instantly to your device. This means the app is blazingly fast and works perfectly offline. Cloud sync is a feature for convenience and multi-device support—not a requirement to use the app.</p>
-
-                <h4 style="margin-top: var(--space-md); margin-bottom: var(--space-xs);">2. Your Data is Yours</h4>
-                <p>We don't sell your data. We don't hold it hostage. You can export your entire database (workouts, nutrition, body metrics, and recipes) to JSON or CSV at any time, straight from the app settings.</p>
-
-                <h4 style="margin-top: var(--space-md); margin-bottom: var(--space-xs);">3. AI as an Assistant, Not a Gimmick</h4>
-                <p>We use artificial intelligence where it actually solves a problem. We use OpenAI's Whisper for voice dictation so you don't have to type out meals, and Anthropic's Claude for CBT-style habit coaching grounded in your real logged data. We never use AI to fabricate exercise instructions or guess at unverified nutrition facts.</p>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-brand">
-                    <a href="index.html" class="logo">
-                        <img src="assets/vantage-mark-transparent.png" width="20" height="20" alt="Vantage Logo" style="object-fit: contain;">
-                        Vantage
-                    </a>
-                    <p>The gym and nutrition app built for focus, speed, and data ownership.</p>
-                </div>
-                <div class="footer-links">
-                    <h4>Product</h4>
-                    <ul>
-                        <li><a href="features.html">Features</a></li>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="#">Download on the App Store</a></li>
-                    </ul>
-                </div>
-                <div class="footer-links">
-                    <h4>Support & Legal</h4>
-                    <ul>
-                        <li><a href="contact.html">Contact</a></li>
-                        <li><a href="privacy.html">Privacy Policy</a></li>
-                        <li><a href="terms.html">Terms of Service</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 Vantage. All rights reserved.</p>
-                <p>Designed for iOS & Android.</p>
-            </div>
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
+        <h2>Built in the open with its own evidence</h2>
+        <p>The app is still in private beta. Product claims are tied to implemented behavior, automated checks, and rendered verification. When something remains in testing, Vantage says so.</p>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="container footer-grid"><div class="footer-brand"><a href="index.html" class="logo"><img src="assets/vantage-mark-transparent.png" width="26" height="26" alt=""><span>Vantage</span></a><p>Training and nutrition in one clear, local-first view.</p></div><div class="footer-links"><h2>Product</h2><ul><li><a href="features.html">Features</a></li><li><a href="about.html">About</a></li><li><a href="mailto:support@vantage.support?subject=Vantage%20private%20beta">Private beta</a></li></ul></div><div class="footer-links"><h2>Support &amp; legal</h2><ul><li><a href="contact.html">Support</a></li><li><a href="privacy.html">Privacy Policy</a></li><li><a href="consumer-health-data.html">Consumer Health Data Notice</a></li><li><a href="terms.html">Terms of Service</a></li></ul></div></div>
+    <div class="container footer-bottom"><p>&copy; 2026 Vantage. All rights reserved.</p><p>Built for iPhone, iPad, and Apple Watch.</p></div>
+  </footer>
+  <script src="script.js"></script>
 </body>
 </html>
