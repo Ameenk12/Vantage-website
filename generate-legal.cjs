@@ -64,7 +64,7 @@ function renderDocument(document, description) {
   <title>${escapeHtml(document.shortTitle)} — Vantage</title>
   <meta name="description" content="${escapeHtml(description)}">
   <link rel="icon" href="assets/vantage-mark-transparent.png">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css?v=20260926-1">
 </head>
 <body>
 ${header()}
@@ -87,7 +87,7 @@ ${header()}
     </section>
   </main>
 ${footer}
-  <script src="script.js"></script>
+  <script src="script.js?v=20260926-1"></script>
 </body>
 </html>
 `;
