@@ -44,7 +44,7 @@ h3 { font-size: 1.25rem; line-height: 1.2; }
 .site-header.scrolled { border-color: var(--line); }
 .nav-container { display: flex; min-height: 72px; align-items: center; justify-content: space-between; }
 .logo { display: inline-flex; align-items: center; gap: .55rem; font-size: 1rem; font-weight: 720; letter-spacing: -.02em; }
-.logo img { width: 30px; height: 30px; object-fit: contain; }
+.logo img { width: 166px; height: 40px; object-fit: contain; }
 .nav-links { display: flex; align-items: center; gap: 1.8rem; }
 .nav-links > a:not(.btn) { color: var(--muted); font-size: .9rem; font-weight: 600; }
 .nav-links > a:hover, .nav-links > a[aria-current="page"] { color: var(--ink); }
