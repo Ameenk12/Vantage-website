@@ -100,6 +100,15 @@ const documents = [
 ];
 
 for (const [file, document, description] of documents) {
-  fs.writeFileSync(path.join(websiteRoot, file), renderDocument(document, description));
-  process.stdout.write(`Generated ${file} from app legal version ${document.version}\n`);
+  const target = path.join(websiteRoot, file);
+  const generated = renderDocument(document, description);
+  if (process.argv.includes('--check')) {
+    if (!fs.existsSync(target) || fs.readFileSync(target, 'utf8') !== generated) {
+      process.stderr.write(`Stale legal page: ${file}. Run node website/generate-legal.cjs\n`);
+      process.exitCode = 1;
+    } else process.stdout.write(`Verified ${file} matches app legal version ${document.version}\n`);
+  } else {
+    fs.writeFileSync(target, generated);
+    process.stdout.write(`Generated ${file} from app legal version ${document.version}\n`);
+  }
 }
